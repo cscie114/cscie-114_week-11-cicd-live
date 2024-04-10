@@ -1,0 +1,39 @@
+---
+title: 'Hello, CSCI E-114!'
+layout: 'layouts/base.html'
+---
+
+<header>
+    <h1>Hello, CSCI E-114!</h1>
+</header>
+
+<main>
+    <h2>My name is Michael D. Hilborn.</h2>
+
+    <section id="funFacts">
+        <h3>Two fun facts about myself are:</h3>
+        
+        <ul>
+            <li>I am a reluctant traveler: I don't particularly like traveling, but I have managed to vist six out of the seven continents. Antarctica, here I come!!</li>
+            <li>I am a published author who likes to write speculative fiction, particularly science-fiction, fantasy, and horror stories.</li>
+        </ul>
+    </section>
+    <section id="myMovie">
+        <h3>Here's some information about one of my favorite movies:</h3>
+        
+        <ul>
+            <li><strong>Title:</strong> {{ movie.Title }} </li>
+            <li><strong>Plot:</strong> {{movie.Plot }}</li>
+            <li><strong>Director:</strong> {{ movie.Director }}</li>
+            <li><strong>Year:</strong> {{ movie.Year }}</li>
+        </ul>
+        <div id="myMoviePoster">
+            <img src="{{ movie.Poster }}" alt="{{ movie.Title }}" />
+        </div>
+    </section>
+</main>
+
+<footer>
+    This web page is an example of CI/CD in action! 
+</footer>
+

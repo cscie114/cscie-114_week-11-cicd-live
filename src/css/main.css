@@ -1,0 +1,56 @@
+/* Add your CSS to this file. */
+
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 75%;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+}
+
+section {
+    background-color: white;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+}
+
+#myMovie {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: 
+        "blurb blurb"
+        "image info"
+}
+
+#myMovie h3 {
+    grid-area: blurb;
+}
+
+#myMovie ul {
+    grid-area: info;
+}
+
+#myMovie div {
+    grid-area: image;
+
+}
+
+#myMovie div img {
+    width: 100%;
+}
+
+footer {
+    font-size: 0.75em;
+    color: white;
+    border-top: white dashed thin;
+    padding: 0.5em;
+}
